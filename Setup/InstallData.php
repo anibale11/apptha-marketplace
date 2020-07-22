@@ -59,70 +59,70 @@ class InstallData implements InstallDataInterface {
         $group->setCode ( 'Marketplace Seller' )->save ();
 
         $categorySetup = $this->categorySetupFactory->create ( [
-                'setup' => $setup
+            'setup' => $setup
         ] );
 
         $categorySetup->addAttribute ( \Magento\Catalog\Model\Product::ENTITY, 'seller_id', ['type' => 'int','backend' => '','frontend' => '','label' => 'Seller Id',
-                'input' => 'text','class' => '','source' => '','group' => 'Marketplace Details','visible' => true,'required' => false,'user_defined' => false,'default' => '',
-                'searchable' => false,'filterable' => false,'comparable' => false,'visible_on_front' => false,'used_in_product_listing' => true,'unique' => false,
-                'apply_to' => ''] );
+            'input' => 'text','class' => '','source' => '','group' => 'Marketplace Details','visible' => true,'required' => false,'user_defined' => false,'default' => '',
+            'searchable' => false,'filterable' => false,'comparable' => false,'visible_on_front' => false,'used_in_product_listing' => true,'unique' => false,
+            'apply_to' => ''] );
 
         $categorySetup->addAttribute ( \Magento\Catalog\Model\Product::ENTITY, 'product_approval', ['type' => 'int','backend' => '','frontend' => '','label' => 'Product Auto Approval','input' => 'select','class' => '',
-                'source' => 'Magento\Eav\Model\Entity\Attribute\Source\Boolean','group' => 'Marketplace Details','visible' => true,
-                'required' => false,'user_defined' => false,'default' => '','searchable' => false,'filterable' => false,
-                'comparable' => false,'visible_on_front' => false,'used_in_product_listing' => true,'apply_to' => ''] );
+            'source' => 'Magento\Eav\Model\Entity\Attribute\Source\Boolean','group' => 'Marketplace Details','visible' => true,
+            'required' => false,'user_defined' => false,'default' => '','searchable' => false,'filterable' => false,
+            'comparable' => false,'visible_on_front' => false,'used_in_product_listing' => true,'apply_to' => ''] );
 
 
-            $attributeSetup = $this->categorySetupFactory->create ( [
-                    'setup' => $setup
-            ] );
+        $attributeSetup = $this->categorySetupFactory->create ( [
+            'setup' => $setup
+        ] );
             /**
              * Is Assign Product Attribute
              */
             $attributeSetup->addAttribute ( \Magento\Catalog\Model\Product::ENTITY, 'is_assign_product', ['type' => 'int','backend' => '','frontend' => '','label' => 'Is Assign Product',
-                    'input' => 'text','class' => '','source' => '','group' => 'Marketplace Details','visible' => true,'required' => false,'user_defined' => false,'default' => '',
-                    'searchable' => false,'filterable' => false,'comparable' => false,'visible_on_front' => false,
-                    'used_in_product_listing' => true,'unique' => false,'apply_to' => ''] );
+                'input' => 'text','class' => '','source' => '','group' => 'Marketplace Details','visible' => true,'required' => false,'user_defined' => false,'default' => '',
+                'searchable' => false,'filterable' => false,'comparable' => false,'visible_on_front' => false,
+                'used_in_product_listing' => true,'unique' => false,'apply_to' => ''] );
             /**
              * Assign Product Id Attribute
              */
             $attributeSetup->addAttribute ( \Magento\Catalog\Model\Product::ENTITY, 'assign_product_id', [
-                    'type' => 'int','backend' => '','frontend' => '','label' => 'Assign Product Id','input' => 'text',
-                    'user_defined' => false,'default' => '','searchable' => false,'class' => '',
-                    'source' => '','group' => 'Marketplace Details','visible' => true,'required' => false,
-                    'filterable' => false,'comparable' => false,'visible_on_front' => false,
-                    'used_in_product_listing' => true,'unique' => false,'apply_to' => ''] );
+                'type' => 'int','backend' => '','frontend' => '','label' => 'Assign Product Id','input' => 'text',
+                'user_defined' => false,'default' => '','searchable' => false,'class' => '',
+                'source' => '','group' => 'Marketplace Details','visible' => true,'required' => false,
+                'filterable' => false,'comparable' => false,'visible_on_front' => false,
+                'used_in_product_listing' => true,'unique' => false,'apply_to' => ''] );
             /**
              * Config Assign Simple Id Attribute
              */
             $attributeSetup->addAttribute ( \Magento\Catalog\Model\Product::ENTITY, 'config_assign_simple_id', [ 'type' => 'int',
-                    'backend' => '','frontend' => '','label' => 'Assign product id [Simple Product]','input' => 'text',
-                    'class' => '','source' => '','group' => 'Marketplace Details','visible' => true,'required' => false,
-                    'user_defined' => false,'default' => '','searchable' => false,'filterable' => false,'comparable' => false,
-                    'visible_on_front' => false,'used_in_product_listing' => true,'unique' => false,'apply_to' => ''] );
+                'backend' => '','frontend' => '','label' => 'Assign product id [Simple Product]','input' => 'text',
+                'class' => '','source' => '','group' => 'Marketplace Details','visible' => true,'required' => false,
+                'user_defined' => false,'default' => '','searchable' => false,'filterable' => false,'comparable' => false,
+                'visible_on_front' => false,'used_in_product_listing' => true,'unique' => false,'apply_to' => ''] );
             /**
              * Creating attribute for national shipping amount
              */
             $attributeSetup->addAttribute ( \Magento\Catalog\Model\Product::ENTITY, 'national_shipping_amount', [
-                    'type' => 'int','backend' => '','frontend' => '','label' => 'National Shipping Amount',
-                    'input' => 'text','class' => '','source' => '','group' => 'Marketplace Details',
-                    'visible' => true,'required' => false,'user_defined' => false,'default' => '',
-                    'searchable' => false,'filterable' => false,'comparable' => false,'visible_on_front' => false,
-                    'used_in_product_listing' => true,'unique' => false,'apply_to' => '' ] );
+                'type' => 'int','backend' => '','frontend' => '','label' => 'National Shipping Amount',
+                'input' => 'text','class' => '','source' => '','group' => 'Marketplace Details',
+                'visible' => true,'required' => false,'user_defined' => false,'default' => '',
+                'searchable' => false,'filterable' => false,'comparable' => false,'visible_on_front' => false,
+                'used_in_product_listing' => true,'unique' => false,'apply_to' => '' ] );
 
             /**
              * Creating attribute for international shipping amount
              */
             $attributeSetup->addAttribute ( \Magento\Catalog\Model\Product::ENTITY, 'international_shipping_amount', [
-                    'type' => 'int','backend' => '','frontend' => '','label' => 'International Shipping Amount',
-                    'input' => 'text','class' => '','source' => '','group' => 'Marketplace Details','visible' => true,
-                    'required' => false,'user_defined' => false,'default' => '','searchable' => false,'filterable' => false,
-                    'comparable' => false,'visible_on_front' => false,'used_in_product_listing' => true,'unique' => false,
-                    'apply_to' => ''] );
+                'type' => 'int','backend' => '','frontend' => '','label' => 'International Shipping Amount',
+                'input' => 'text','class' => '','source' => '','group' => 'Marketplace Details','visible' => true,
+                'required' => false,'user_defined' => false,'default' => '','searchable' => false,'filterable' => false,
+                'comparable' => false,'visible_on_front' => false,'used_in_product_listing' => true,'unique' => false,
+                'apply_to' => ''] );
             /**
              * Adding new attribute group name "Custom Attribute"
              */
             $attributeSetup->addAttributeGroup ( \Magento\Catalog\Model\Product::ENTITY, 'Default', 'Custom Attribute', 1000 );
-        $setup->endSetup ();
+            $setup->endSetup ();
+        }
     }
-}
