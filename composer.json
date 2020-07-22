@@ -18,5 +18,8 @@
                 "Apptha/Marketplace"
             ]
         ]
+    },
+    "autoload": {
+        "files": ["registration.php"]
     }
 }
