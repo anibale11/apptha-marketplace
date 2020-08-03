@@ -51,7 +51,12 @@ class Category extends \Magento\Framework\App\Action\Action {
      * @param \Magento\Store\Model\StoreManagerInterface $storeManager            
      * @param CategoryRepositoryInterface $categoryRepository            
      */
-    public function __construct(\Magento\Framework\App\Action\Context $context, \Magento\Store\Model\StoreManagerInterface $storeManager, CategoryRepositoryInterface $categoryRepository, \Apptha\Marketplace\Helper\Data $dataHelper) {
+    public function __construct(
+        \Magento\Framework\App\Action\Context $context,
+        \Magento\Store\Model\StoreManagerInterface $storeManager,
+        CategoryRepositoryInterface $categoryRepository,
+        \Apptha\Marketplace\Helper\Data $dataHelper
+    ) {
         parent::__construct ( $context );
         $this->storeManager = $storeManager;
         $this->categoryRepository = $categoryRepository;

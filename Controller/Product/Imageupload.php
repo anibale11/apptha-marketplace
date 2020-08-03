@@ -49,7 +49,10 @@ class Imageupload extends \Magento\Framework\App\Action\Action {
      * @param \Magento\Framework\App\Action\Context $context
      * @param \Magento\Store\Model\StoreManagerInterface $storeManager
      */
-    public function __construct(\Magento\Framework\App\Action\Context $context,\Magento\Store\Model\StoreManagerInterface $storeManager) {
+    public function __construct(
+        \Magento\Framework\App\Action\Context $context,
+        \Magento\Store\Model\StoreManagerInterface $storeManager
+    ) {
         parent::__construct ( $context );
         $this->storeManager = $storeManager;
     }
@@ -149,9 +152,8 @@ class Imageupload extends \Magento\Framework\App\Action\Action {
                 <img src="' . $absPath . '" alt="' . $absPath . '" height="200" width="200">
                 <input class="hidden_uploaded_image_path" type="hidden" name="images_path[]" value="' . $fileName . '" /></span>';
             } catch (\Exception $e) {
-                ?> 
-                <div class="name-error" style="color: red;"> <?php echo $e->getMessage().' Allowed File types are .jpg, .jpeg, .gif, .png'; ?></div>
-            <?php }
+                '<div class="name-error" style="color: red;">' .$e->getMessage().' Allowed File types are .jpg, .jpeg, .gif, .png</div>';
+            }
         }
     }
         /**

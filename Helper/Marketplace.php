@@ -47,7 +47,14 @@ class Marketplace extends AbstractHelper {
     
     protected $file;
     
-    public function __construct( \Magento\Framework\ObjectManagerInterface $objectManager, \Magento\Framework\Message\ManagerInterface $messageManager, \Magento\Framework\App\Helper\Context $context,  \Apptha\Marketplace\Model\Product\Gallery\Video\Processor $videoGalleryProcessor,DirectoryList $directoryList, File $files) {
+    public function __construct(
+        \Magento\Framework\ObjectManagerInterface $objectManager,
+        \Magento\Framework\Message\ManagerInterface $messageManager,
+        \Magento\Framework\App\Helper\Context $context,
+        \Apptha\Marketplace\Model\Product\Gallery\Video\Processor $videoGalleryProcessor,
+        DirectoryList $directoryList,
+        File $files
+    ) {
         $this->_objectManager = $objectManager;
         $this->messageManager= $messageManager;
         $this->videoGalleryProcessor = $videoGalleryProcessor;

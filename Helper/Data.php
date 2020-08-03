@@ -62,7 +62,12 @@ class Data extends AbstractHelper {
      * @param Context $context            
      * @param ScopeConfigInterface $scopeConfig            
      */
-    public function __construct(Context $context,\Magento\Store\Model\StoreManagerInterface $storeManager, CategoryRepositoryInterface $categoryRepository, \Magento\Catalog\Model\ProductFactory $productFactory, \Magento\ConfigurableProduct\Helper\Data $conficAttributeData) {
+    public function __construct(
+        Context $context,\Magento\Store\Model\StoreManagerInterface $storeManager,
+        CategoryRepositoryInterface $categoryRepository,
+        \Magento\Catalog\Model\ProductFactory $productFactory,
+        \Magento\ConfigurableProduct\Helper\Data $conficAttributeData
+    ) {
         parent::__construct ( $context );
         $this->scopeConfig = $context->getScopeConfig();
         $this->storeManager = $storeManager;

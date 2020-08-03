@@ -172,7 +172,12 @@ class Email extends \Magento\Framework\App\Helper\AbstractHelper {
      * @param Magento\Framework\Translate\Inline\StateInterface $inlineTranslation            
      * @param Magento\Framework\Mail\Template\TransportBuilder $transportBuilder            
      */
-    public function __construct(\Magento\Framework\App\Helper\Context $context, \Magento\Store\Model\StoreManagerInterface $storeManager, \Magento\Framework\Translate\Inline\StateInterface $inlineTranslation, \Magento\Framework\Mail\Template\TransportBuilder $transportBuilder) {
+    public function __construct(
+        \Magento\Framework\App\Helper\Context $context,
+        \Magento\Store\Model\StoreManagerInterface $storeManager,
+        \Magento\Framework\Translate\Inline\StateInterface $inlineTranslation,
+        \Magento\Framework\Mail\Template\TransportBuilder $transportBuilder
+    ) {
         $this->_scopeConfig = $context;
         parent::__construct ( $context );
         $this->_storeManager = $storeManager;
