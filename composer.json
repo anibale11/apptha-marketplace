@@ -2,10 +2,15 @@
  "name": "apptha/marketplace",
     "description": "Apptha Marketplace Extension ",
     "require": {
+	"php": ">=7.1",
+	"magento/framework": "*.*",
+	"magento/module-backend": "*",
+	"magento/module-config": "*",
+	"magento/module-ui": "*",
         "magento/magento-composer-installer": "*"
     },
     "type": "magento2-module",
-    "version": "1.1",
+    "version": "1.0",
     "extra": {
         "map": [
             [
@@ -13,5 +18,8 @@
                 "Apptha/Marketplace"
             ]
         ]
+    },
+    "autoload": {
+        "files": ["registration.php"]
     }
 }
