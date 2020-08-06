@@ -3,14 +3,10 @@
     "description": "Marketplace Extension M2 adapted for PHP73",
     "require": {
 	"php": ">=7.1",
-	"magento/framework": "*.*",
-	"magento/module-backend": "*",
-	"magento/module-config": "*",
-	"magento/module-ui": "*",
         "magento/magento-composer-installer": "*"
     },
     "type": "magento2-module",
-    "version": "1.0",
+    "version": "1.2",
     "autoload": {
         "files": ["registration.php"]
     }
