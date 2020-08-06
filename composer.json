@@ -1,6 +1,6 @@
 {
- "name": "apptha/marketplace",
-    "description": "Apptha Marketplace Extension ",
+ "name": "anibale/apptha-marketplace",
+    "description": "Marketplace Extension M2 adapted for PHP73",
     "require": {
 	"php": ">=7.1",
 	"magento/framework": "*.*",
@@ -11,14 +11,6 @@
     },
     "type": "magento2-module",
     "version": "1.0",
-    "extra": {
-        "map": [
-            [
-                "*",
-                "Apptha/Marketplace"
-            ]
-        ]
-    },
     "autoload": {
         "files": ["registration.php"]
     }

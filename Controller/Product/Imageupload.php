@@ -159,6 +159,6 @@ class Imageupload extends \Magento\Framework\App\Action\Action {
         /**
          * To return html result
          */
-        echo $htmlResult;
+        return $htmlResult;
     }
 }

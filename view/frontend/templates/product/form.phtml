@@ -150,7 +150,7 @@ $categories = $block->getStoreCategories ( false, false, true );
   <div class="block-category">
     <?php if (! empty ( $categories )) {
                  echo $block->alphabaticalOrder ( $categories, $productCategoryIds );
-          }?>
+    ?>
   </div>
 </div>
            <label for="name" class="label"><span><?php echo __('Name') ?></span></label>
@@ -624,7 +624,7 @@ if ($customAttributes == 1) {
             <div class="image_holder image-placeholder">
               <input type="file" name="product_images[]"
               id="upload_product_images" multiple>
-              <p class="image-placeholder-text"><?php echo __('Click here to add images.'); ?></p>
+              <p class="image-placeholder-text"><?php echo 'Click aqui para agregar las imágenes.'; ?></p>
             </div>
             <?php
             if (! empty ( $productId )) {
